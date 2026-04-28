@@ -32,3 +32,44 @@ document.querySelectorAll(".nav-links a").forEach(link => {
         navLinks.classList.remove("show");
     });
 });
+
+//Typing Animation in Hero Section
+const nameText = "Hi, I'm Mahendra";
+const roleText = "B.Tech EEE Student | Web Developer";
+
+let nameIndex = 0;
+let roleIndex = 0;
+
+// Typing animation for name
+function typeName() {
+    if (nameIndex < nameText.length) {
+        document.querySelector(".typing-name").innerHTML += nameText.charAt(nameIndex);
+        nameIndex++;
+        setTimeout(typeName, 100);
+    } else {
+        setTimeout(typeRole, 500);
+    }
+}
+
+// Typing animation for role
+function typeRole() {
+    if (roleIndex < roleText.length) {
+        document.querySelector(".typing-text").innerHTML += roleText.charAt(roleIndex);
+        roleIndex++;
+        setTimeout(typeRole, 80);
+    }
+}
+
+typeName();
+
+//Fade-in Animation for Sections
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}

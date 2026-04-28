@@ -14,12 +14,12 @@ B.Tech EEE Student passionate about:
 I am currently preparing for placements and improving my technical skills.
 
 # Features
- Responsive portfolio design  
- Dark Mode / Light Mode  
- Mobile Navigation Menu  
- Projects Section  
- Contact Section  
- Modern UI Design  
+- Responsive portfolio design  
+- Dark Mode / Light Mode  
+- Mobile Navigation Menu  
+- Projects Section  
+- Contact Section  
+- Modern UI Design  
 
 # Technologies Used
 - HTML5
@@ -35,10 +35,9 @@ I am currently preparing for placements and improving my technical skills.
 
 # Project Structure
 
-```bash
 portfolio/
-│── index.html
+── index.html
 │── style.css
-│── script.js
+── script.js
 │── profile.jpg
-│── README.md
+── README.md

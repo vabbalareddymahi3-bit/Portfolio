@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Mahendra Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="progress-bar"></div>
+
+<div id="loader">
+   <h1>Loading Education Page...</h1>
+</div>
+
+<header class="header">
+    <nav class="nav container">
+        <h2 class="logo">Vabbalareddy Mahendra</h2>
+
+        <button class="menu-btn" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <button class="toggle-btn" id="themeBtn">🌙</button>
+    </nav>
+</header>
+
+<section class="section" id="education-page">
+    <div class="container">
+
+        <h2 class="section-title">My Education</h2>
+
+        <div class="education-grid">
+            <div class="card">
+                <h3>B.Tech (EEE)</h3>
+                <p>Avanthi Institute of Engineering & Technology</p>
+                <p>2022 - 2026</p>
+            </div>
+
+            <div class="card">
+                <h3>Intermediate</h3>
+                <p>Your Junior College Name</p>
+                <p>2020 - 2022</p>
+            </div>
+
+            <div class="card">
+                <h3>SSC</h3>
+                <p>Your School Name</p>
+                <p>2020</p>
+            </div>
+        </div>
+
+        <!-- BUTTON -->
+        <div style="text-align:center;">
+            <button id="openStudyApp" class="study-btn">
+                Open Student Study Helper
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅ POPUP -->
+<div id="studyPopup" class="popup">
+  <div class="popup-content">
+
+    <span id="closePopup">&times;</span>
+
+    <h2 id="popupTitle">Student Study Helper</h2>
+
+    <div id="popupBody">
+
+      <div class="study-grid">
+        <div class="card" onclick="openFeature('todo')">✅ To-Do List</div>
+        <div class="card" onclick="openFeature('attendance')">📚 Attendance</div>
+        <div class="card" onclick="openFeature('countdown')">⏳ Countdown</div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+    <p>© 2026 Mahendra</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
